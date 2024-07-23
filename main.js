@@ -1,6 +1,9 @@
 let add = document.getElementsByClassName("add");
-add.forEach(e => {
-    e.onclick = function() {
-        e.style.display = 'none';
-    };
-});
+let addArray = Array.from(add);
+
+addArray.forEach(ele => {
+    ele.addEventListener("click", function () {
+        this.style.display = "none";
+    })  
+})
+

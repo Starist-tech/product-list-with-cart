@@ -21,7 +21,6 @@
     padding: 15px;
 }
 .box {
-    background-color: red;
     position: relative;
     margin-bottom: 10px;
 }
@@ -59,7 +58,7 @@ span {
     cursor: pointer;
 }
 .choose {
-    display: none;
+    display: flex;
     align-items: center;
     gap: 30px;
     justify-content: space-around;
@@ -67,8 +66,8 @@ span {
     left: 50%;
     top: 50%;
     width: 150px;
-    padding: 16px 0px;
-    translate: -50% 35%;
+    padding: 10px 0px;
+    translate: -50% 50%;
     background-color: var(--Red);
     border-radius: 25px;
 }
@@ -85,6 +84,6 @@ img.decrement {
 }
 img {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     border-radius: 10px;
 }
