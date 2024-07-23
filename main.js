@@ -7,3 +7,18 @@ addArray.forEach(ele => {
     })  
 })
 
+let incre = document.querySelectorAll(".increment");
+let decre = document.querySelectorAll(".decrement");
+
+incre.forEach(ele => {
+    ele.onclick = function(ele) {
+        this.previousElementSibling.innerHTML++
+    }
+})
+
+decre.forEach(ele => {
+    ele.onclick = function(ele) {
+        if(this.nextElementSibling.innerHTML > 0) this.nextElementSibling.innerHTML--
+    }
+})
+

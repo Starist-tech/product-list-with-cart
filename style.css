@@ -37,7 +37,7 @@ h5{
 h3 {
     margin: 3px auto;
 }
-span {
+.box span {
     color: var(--Red);
     font-weight: 600;
 }
@@ -86,4 +86,7 @@ img {
     width: 100%;
     margin-bottom: 25px;
     border-radius: 10px;
+}
+.choose span {
+    color: white;
 }
