@@ -21,8 +21,10 @@
     display: flex;
     gap: 35px;
 }
-
-
+.box {
+    position: relative;
+    margin-bottom: 10px;
+}
 .main-grid {
     display: grid;
     grid-template-columns: repeat(3, 200px);
