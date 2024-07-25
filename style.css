@@ -19,6 +19,7 @@
 .container {
     padding-left: 20px;
     display: flex;
+    justify-content: center;
     gap: 35px;
 }
 .box {
@@ -27,7 +28,7 @@
 }
 .main-grid {
     display: grid;
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 350px));
     grid-template-rows: repeat(3, min-content);
     gap: 20px;
 }
