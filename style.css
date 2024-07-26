@@ -18,8 +18,8 @@
 }
 .container {
     padding-left: 20px;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: auto minmax(0, 300px);    
     gap: 35px;
 }
 .box {
@@ -28,7 +28,8 @@
 }
 .main-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 350px));
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 200px));
     grid-template-rows: repeat(3, min-content);
     gap: 20px;
 }

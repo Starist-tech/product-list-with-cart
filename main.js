@@ -4,6 +4,7 @@ let addArray = Array.from(add);
 addArray.forEach(ele => {
     ele.addEventListener("click", function () {
         this.style.display = "none";
+        this.parentElement.firstElementChild.style.border = "solid 2px var(--Red)"
     })  
 })
 
