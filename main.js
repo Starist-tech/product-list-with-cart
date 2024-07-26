@@ -1,8 +1,13 @@
 let add = document.getElementsByClassName("add");
 let addArray = Array.from(add);
+let ordersParent = document.querySelector(".orders")
 
 addArray.forEach(ele => {
     ele.addEventListener("click", function () {
+        let newOrder = document.createElement("div")
+        newOrder.className = "newOrder";
+        newOrder.innerHTML = this.parentElement.childNodes[5].innerHTML;
+        ordersParent.appendChild(newOrder)
         this.style.display = "none";
         this.parentElement.firstElementChild.style.border = "solid 2px var(--Red)"
     })  
