@@ -14,7 +14,7 @@ addArray.forEach(ele => {
         let desc = document.createElement("div");
         desc.className = 'desc';
         let first = document.createElement('span');
-        first.innerHTML = '1x'; first.className = 'first';
+        first.innerHTML = `${this.previousElementSibling.children[1].innerHTML}x`; first.className = 'first';
         let second = document.createElement('span');
         second.innerHTML = '$7'; second.className = 'second';
         let third = document.createElement('span');
