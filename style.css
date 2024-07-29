@@ -130,7 +130,42 @@ img.cakeIcon {
 }
 span.first {
     color: var(--Red);
+}.total {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 400;
+    margin-top: 30px;
+    display: none;
 }
-
+.total span {
+    font-weight: 700;
+}
+.main-carbo {
+    padding: 5px;
+    background-color: var(--Rose-100);
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 30px auto 10px;
+    display: none;
+}
+img.carbo {
+    width: 15px;
+    margin: 5px;
+}
+.confirm {
+    background-color: var(--Red);
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 25px;
+    margin: 10px auto;
+    cursor: pointer;
+    display: none;
+}
 
 

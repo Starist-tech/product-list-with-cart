@@ -5,7 +5,10 @@ let ordersParent = document.querySelector(".orders")
 addArray.forEach(ele => {
     ele.addEventListener("click", function () {
         this.parentElement.parentElement.parentElement.lastElementChild.children[1].style.display = 'none' //deleting the descreption
-        this.parentElement.parentElement.parentElement.lastElementChild.children[3].style.display = 'none' //deleting the cake image
+        this.parentElement.parentElement.parentElement.lastElementChild.children[5].style.display = 'none' //deleting the cake image
+        this.parentElement.parentElement.parentElement.lastElementChild.children[3].style.display = 'flex' //deleting the cake image
+        this.parentElement.parentElement.parentElement.lastElementChild.children[4].style.display = 'flex' //deleting the cake image
+        this.parentElement.parentElement.parentElement.lastElementChild.children[5].style.display = 'block' //deleting the cake image
         let newOrder = document.createElement("div")
         newOrder.className = "newOrder";
         let h2 = document.createElement("h2");
@@ -32,9 +35,8 @@ let decre = document.querySelectorAll(".decrement");
 
 incre.forEach(ele => {
     ele.onclick = function(ele) {
-        this.previousElementSibling.innerHTML++
-    }
-})
+        this.previousElementSibling.innerHTML++;
+}})
 
 decre.forEach(ele => {
     ele.onclick = function(ele) {
