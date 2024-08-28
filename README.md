@@ -1,7 +1,7 @@
 #Frontend Mentor - Product list with cart
 
 ![Design preview for the Product list with cart coding challenge](./preview.jpg)
-
+dick
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
