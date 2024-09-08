@@ -29,7 +29,7 @@
 .main-grid {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(auto, 200px));
+    grid-template-columns: repeat(auto-fit, minmax(auto, 250px));
     grid-template-rows: repeat(3, min-content);
     gap: 20px;
 }
@@ -38,7 +38,7 @@ h1 {
     margin: 20px 5px;
 }
 h5 {
-    font-weight: 300;
+    font-weight: 600;
     color: var(--Rose-300);
 }
 h3 {
@@ -116,8 +116,12 @@ img.cakeIcon {
 }
 .newOrder {
     border-bottom: 1px solid;
-    padding: 15px 0 5px;
+    padding: 15px 0 10px;
     font-weight: 600;
+    position: relative;
+    gap: 5px;
+    align-items: center;
+    border: none;
 }
 .orders h2 {
     color: black;
@@ -130,7 +134,11 @@ img.cakeIcon {
 }
 span.first {
     color: var(--Red);
-}.total {
+}
+span.third {
+    color: var(--Rose-500);
+}
+.total {
     font-size: 18px;
     display: flex;
     justify-content: space-around;
@@ -140,8 +148,9 @@ span.first {
     display: none;
 }
 .total span {
-    font-weight: 700;
-}
+        font-weight: 700;
+        font-size: 25px;
+    }
 .main-carbo {
     padding: 5px;
     background-color: var(--Rose-100);
@@ -167,5 +176,59 @@ img.carbo {
     cursor: pointer;
     display: none;
 }
+img.remove {
+    width: 13px;
+    margin: 0;
+    border: 1px solid black;
+    padding: 1px;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    cursor: pointer;
+}
+.choices > * {
+    font-size: 12px !important;
+}
+.choices img.remove {
+    display: none;
+}
+.desc {
+    display: flex;
+    gap: 10px;
+}
 
+.pop h2 {
+    margin-bottom: 7px;
+}
+.pop span.third {
+    color: black;
+    position: absolute;
+    right: 15px;
+}
+.pop span.second {
+   color: var(--Rose-400);
+}
+.pop .total {
+    font-size: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
 
+@media (max-width: 600px) {
+    .main-grid {
+        grid-template-columns: repeat(1, minmax(auto, 250px));
+    }
+    .container {
+        grid-template-columns: auto;
+    }    
+}
+@media (min-width: 1200px) {
+    .main-grid {
+        grid-template-columns: repeat(3, minmax(auto, 250px));
+    }
+    .container {
+        justify-content: center;
+    }
+}
