@@ -13,6 +13,7 @@ addArray.forEach(ele => {
         this.style.display = "none";
         this.parentElement.firstElementChild.style.border = "solid 2px var(--Red)";
         ordersParent.children[this.parentElement.classList[1].slice(1.2)-1].style.display = 'flex';
+        ordersParent.style.display = 'block'
         totalPrice();
     })  
 })
@@ -58,7 +59,7 @@ incre.forEach(ele => {
 decre.forEach(ele => {
     ele.onclick = function(ele) {
         if(this.nextElementSibling.innerHTML > 1) this.nextElementSibling.innerHTML--;
-        ordersParent.children[(parseInt(decre[0].parentElement.parentElement.classList[1].slice(1,2)))-1].children[1].lastElementChild.lastElementChild.innerHTML = `$${(this.parentElement.parentElement.children[3].innerHTML) * (this.parentElement.children[1].innerHTML)}`
+        ordersParent.children[(parseInt(this.parentElement.parentElement.classList[1].slice(1,2)))-1].children[1].lastElementChild.lastElementChild.innerHTML = `$${(this.parentElement.parentElement.children[3].innerHTML) * (this.parentElement.children[1].innerHTML)}`
         ordersParent.children[(parseInt(this.parentElement.parentElement.classList[1].slice(1,2)))-1].children[1].lastElementChild.firstElementChild.innerHTML = `$${this.parentElement.children[1].innerHTML}`
         totalPrice();
     }
@@ -81,6 +82,12 @@ DeleteItem.forEach(ele => {
         this.parentElement.lastElementChild.lastElementChild.innerHTML = this.parentElement.lastElementChild.children[1].innerHTML
         this.parentElement.lastElementChild.firstElementChild.innerHTML = '1x';
         this.parentElement.parentElement.parentElement.parentElement.parentElement.firstElementChild.children[[this.parentElement.parentElement.className.slice(9)-1]].children[4].children[1].innerHTML = 1
+        if(total.lastElementChild.innerHTML.slice(1) == 0) {
+            total.parentElement.children[1].style.display = 'inline';
+            for(let i = 2; i<6; i++) {
+                total.parentElement.children[i].style.display = 'none';
+            }
+        }
     }
 )
 });
