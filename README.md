@@ -1,4 +1,4 @@
-h#Frontend Mentor - Product list with cart
+h#Frontend Mentor - Product list with cartk
 
 ![Design preview for the Product list with cart coding challenge](./preview.jpg)
 ## Welcome! 👋
