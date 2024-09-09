@@ -223,6 +223,11 @@ img.remove {
     .container {
         grid-template-columns: auto;
     }    
+    .pop {
+        width: 300px !important;
+        top: 25% !important;
+        font-size: 13px !important;
+    }
 }
 @media (min-width: 1200px) {
     .main-grid {

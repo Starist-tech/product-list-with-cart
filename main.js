@@ -84,7 +84,7 @@ DeleteItem.forEach(ele => {
         this.parentElement.parentElement.parentElement.parentElement.parentElement.firstElementChild.children[[this.parentElement.parentElement.className.slice(9)-1]].children[4].children[1].innerHTML = 1
         if(total.lastElementChild.innerHTML.slice(1) == 0) {
             total.parentElement.children[1].style.display = 'inline';
-            for(let i = 2; i<6; i++) {
+            for(let i = 3; i<6; i++) {
                 total.parentElement.children[i].style.display = 'none';
             }
         }
