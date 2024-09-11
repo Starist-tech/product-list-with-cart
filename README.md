@@ -1,4 +1,4 @@
-hThe site is live at: https://starist-tech.github.io/product-list-with-cart/
+yhThe site is live at: https://starist-tech.github.io/product-list-with-cart/
 
 #Frontend Mentor - Product list with cart
 
